@@ -30,7 +30,7 @@ Storage.prototype.getShuffledLists = function () {
     try {
         return ShuffledLists.fromJson(localStorage.getObj())
     } catch (e) {
-        alert (e)
+        // alert (e)
         return createDemoData()
     }
 }
