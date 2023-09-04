@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    //border: 1px solid;
 }
 
 body {
@@ -76,38 +77,14 @@ li {
     margin-bottom: 15px;
 }
 
-.container__title::after {
-    content: "";
-    background: url('../image/tick.svg');
-    display: block;
-    margin-left: 20px;
-    width: 30px;
-    height: 30px;
-}
-
-.container__title--hide.container__title::after {
-    content: "";
-    transform: rotate(-90deg);
-}
-
 .container__content {
-    width: 35%;
+    width: 60%;
 }
 
 .content__form {
     display: flex;
     height: 40px;
     transition: height .3s linear;
-}
-
-.content__form--hide {
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 0;
-}
-
-.content__form--hide .add {
-    height: 0;
 }
 
 .input {
@@ -141,6 +118,11 @@ li {
     align-items: center;
 }
 
+.shuffled_list {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .shuffle {
     display: flex;
     align-items: center;
@@ -163,6 +145,20 @@ li {
     height: 30px;
 }
 
+.edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.edit__icon {
+    width: 25px;
+    height: 25px;
+}
+
 .reset {
     display: flex;
     align-items: center;
@@ -177,18 +173,26 @@ li {
     height: 25px;
 }
 
-.list {
+.participants_list {
     font-size: 20px;
-    padding-left: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.list__item {
+.participants_list__item {
     display: flex;
     align-items: center;
 }
 
-.item__number {
+.item__executed_date {
     margin-right: 10px;
+    text-align: right;
+    font-size: 13px;
+}
+
+.item__checkbox {
+    width: 20px;
+    height: 20px;
 }
 
 .item__remove {
@@ -235,12 +239,6 @@ li {
         margin-bottom: 20px;
     }
 
-    .container__title::after {
-        width: 20px;
-        height: 20px;
-        margin-left: 10px;
-    }
-
     .shuffle {
         padding: 10px 10px;
     }
@@ -259,11 +257,11 @@ li {
         width: 100%;
     }
 
-    .list__item {
+    .participants_list__item {
         margin-bottom: 10px;
     }
 
-    .list {
+    .participants_list {
         font-size: 20px;
     }
 

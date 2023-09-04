@@ -13,34 +13,24 @@
 <body>
 <div class="wrapper">
     <div class="container">
-        <h1 class="container__title container__title--hide">Just shuffle!</h1>
+        <div class="container__title">
+            <h1>Just shuffle!</h1>
+            <button class="edit">
+                <img class="edit__icon" src="image/edit.svg" alt="edit">
+            </button>
+        </div>
         <div class="container__content">
-            <form class="content__form content__form--hide">
-                <input class="input" type="text" maxlength="40" placeholder="Add a new item">
-                <button class="add" type="submit">
-                    <img class="add__icon" src="image/plus.svg" alt="add">
-                </button>
-            </form>
-            <div class="content__buttons">
-                <button class="shuffle">
-                    <span class="shuffle__text">SHUFFLE</span>
-                    <span class="shuffle__img">
-                        <img class="shuffle__icon" src="image/shuffle.svg" alt="SHUFFLE">
-                    </span>
-                </button>
-                <button class="reset">
-                    <img class="reset__icon" src="image/reset.svg" alt="reset">
-                </button>
-            </div>
             <div class="content__result">
-                <ul class="list">
-                </ul>
-            </div>
-            <div class="content__message">
-                There is no content to shuffle :(
+                <div class="shuffled_lists">
+                    <div class="shuffled_list">
+                        <ul class="participants_list">
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script/classes.js"></script>
     <script src="script/main.js"></script>
 </div>
 </body>

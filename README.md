@@ -1,3 +1,13 @@
-# simple-shuffle website
+# Simple-shuffle
 
-This repo contains a simple website to shuffle some list. Available at https://obukhovas.github.io/simple-shuffle/.
+Allows you to randomize participants and keep track of whether they participated.  
+Supports multiple randomization requests.
+
+See link in **About section**
+
+If you are a designer - please contact me.
+
+# Useful for:
+- Status order randomization
+- Duty order randomization
+- 12345 order randomization (use any word instead of 12345)
